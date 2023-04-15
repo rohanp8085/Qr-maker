@@ -40,7 +40,7 @@ const Card = () => {
     <form className='container ' onSubmit={(e) => handleClick(e)}>
       <h3 className='qr-maker'><BsQrCode className='qrimage' />QR MAKER</h3>
       <span>
-        <input value={text} required type="text" placeholder='Enter your URL' onChange={(e) => setText(e.target.value)} />
+        <input value={text} required type="url" placeholder='Enter your URL' onChange={(e) => setText(e.target.value)} />
         <p>Generate your Qr Code</p>
       </span>
       <div className='input-sec'>
