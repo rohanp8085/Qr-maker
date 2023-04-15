@@ -30,7 +30,7 @@ const Card = () => {
 
   // if (!qrMaker || length === 0) {
   //   return (
-  //     <h1>no image</h1>
+  //     <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://https://github.com/rohanp8085/Qr-maker"  alt="" />
   //   )
   // }
 
@@ -45,7 +45,7 @@ const Card = () => {
       </span>
       <div className='input-sec'>
         <div className='image-sec'>
-          <img src={qrMaker} alt="" />
+          <img src={qrMaker}  alt="" />
           <a href="" className='down-btn' download={qrMaker}>download <BsDownload className='down-icon' /></a>
           <button className='submit-btn' > Submit</button>
 
