@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body{
+  padding: 20px;
+  /* background-color: rgb(216, 234, 238); */
+  background-image: url(./pexels-moose-photos-1037992.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.container{background-color: rgba(237, 193, 196, 0.712);
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  padding:80px;
+  width: 900px;
+  border-radius: 20px;
+  position: relative;
+  
+}
+
+.qrimage{
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  
+}
+.qr-maker{
+  position: absolute;
+  top: 32px;
+  left: 40px;
+  font-size: 23px;
+  font-family: 'DynaPuff', cursive;}
+  
+img{
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  /* border-radius: 10px; */
+}
+input{
+  width: 340px;
+  border: none;
+  font-size: 50px;
+  color:  rgb(106, 109, 167);
+  outline: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+.down-icon{
+  margin: 5px 10px;
+  font-size: 15px;
+}
+.input-sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: red; */
+
+}
+.image-sec{
+  background-color: rgb(50, 55, 147);
+  height: 500px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 10px;
+  /* padding: 0px; */
+}
+button{
+  background-color: white;
+  border: none;
+  /* width: 140px; */
+  border-radius: 5px;
+  padding: 9px 45px;
+  font-size: 18px;
+  color:  rgb(84, 91, 196)47;
+  transition:  all ease-in-out 0.3s;
+  
+}
+button:hover{
+  background-color: rgb(226, 226, 234);
+  color: rgb(0, 0, 0);
+}
+.down-btn{
+  text-decoration: none;
+  background-color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  color: black;
+}
+
+@media(max-width:768px){
+  body{
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* background-color: rgb(195, 240, 208); */
+   
+  }
+  .container{
+    width: 400px;
+    flex-direction: column;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 50px; */
+  }
+  .qr-maker{
+    left: 40%;
+    top: 5%;
+  }
+}
